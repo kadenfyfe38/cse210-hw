@@ -8,9 +8,9 @@ class Program
         List<int> numbers = new List<int>();
 
         int sum = 0; //init sum
-        float average = 0; //init avg
+        float average; //init avg
         int runningTotal = 0; //init running total for list
-        int response = 1; //init response
+        int response; //init response
         int maxNum = 0; //init maximum number
 
         do
