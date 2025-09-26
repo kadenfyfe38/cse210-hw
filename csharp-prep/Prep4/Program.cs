@@ -9,7 +9,7 @@ class Program
 
         int sum = 0; //init sum
         float average; //init avg
-        int runningTotal = 0; //init running total for list
+        int runningTotal = -1; //init running total for list
         int response; //init response
         int maxNum = 0; //init maximum number
 
@@ -23,7 +23,6 @@ class Program
 
 
         } while (response != 0);
-        runningTotal = runningTotal - 1; //subtracts 1 from running total to account for user entering 0
         foreach (int num in numbers)
         {
             sum = sum += num; //adds sum to total sum
