@@ -33,7 +33,7 @@ class Entry
 
     public override string ToString()
     {
-        return $"{_entryDateTime}#{_givenPrompt}#{_entryText}";
+        return $"{_entryDateTime}|||{_givenPrompt}|||{_entryText}";
     }
 
 }

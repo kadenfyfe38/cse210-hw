@@ -71,13 +71,12 @@ class Journal
 
         foreach (string line in lines)
         {
-            string[] entry = line.Split("#");
+            string[] entry = line.Split("|||");
             string _entryDateTime = entry[0];
             string _givenPrompt = entry[1];
             string _entryText = entry[2];
             Entry e = new Entry(_entryDateTime, _entryText, _givenPrompt); //turns previously stored lines into new entries to be displayed again
             _entryList.Add(e);
-            //Display();
         }
         Display();
     }
