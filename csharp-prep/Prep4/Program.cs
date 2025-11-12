@@ -22,7 +22,7 @@ class Program
             runningTotal ++; //adds 1 to running total
 
 
-        } while (response != 0);
+        } while (response != 0); 
         foreach (int num in numbers)
         {
             sum = sum += num; //adds sum to total sum
