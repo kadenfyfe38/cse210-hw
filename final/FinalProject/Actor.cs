@@ -1,4 +1,4 @@
-using System.Dynamic;
+using System;
 using System.Numerics;
 
 public abstract class Actor
@@ -28,8 +28,22 @@ public abstract class Actor
     {
         _velocity = newVelocity;
     }
+    public Vector2 GetPosition()
+    {
+        return _position;
+    }
     public string GetTypeOfActor()
     {
         return _typeOfActor;
+    }
+
+    public int GetHealth()
+    {
+        return _health;
+    }
+
+    public void SetPosition(Vector2 position)
+    {
+        _position = position;
     }
 }

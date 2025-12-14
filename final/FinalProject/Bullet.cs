@@ -5,15 +5,17 @@ public class Bullet : Actor
     //attributes
 
     //constructor
-    public Bullet(string name, string type, Vector2 startPosition, int health) : base(name, "Bullet", startPosition, 1)
-    {}
+    public Bullet(Vector2 startPosition, Vector2 velocity) : base("bullet", "Bullet", startPosition, 1)
+    {
+        SetVelocity(velocity);
+    }
     //behaviours
     public override void Move()
     {
-        Vector2 direction = Vector2.Zero;
+        // Vector2 direction = Vector2.Zero;
 
-        float speed = 5.0f;
-        _velocity = direction * speed;
+        // float speed = 5.0f;
+        // _velocity = direction * speed;
         
         base.Move();
     }
